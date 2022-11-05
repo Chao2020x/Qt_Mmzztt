@@ -1,0 +1,73 @@
+﻿/********************** MainWindow Style Sheet  *******************/
+QMainWindow
+{
+background-color:#1A1A1A;
+color:white;
+border:none;
+}
+
+/********************** QPushButton Style Sheet  *******************/
+QPushButton
+{
+border-style:none;
+padding:8px;
+border-radius:5px;
+color:#FFFFFF;
+background:#3498DB;
+}
+
+QPushButton:hover
+{
+color:#E5FEFF;
+background:#5DACE4;
+}
+
+QPushButton:pressed{
+color:#A0DAFB;
+background:#2483C7;
+}
+
+QPushButton:disabled{
+color:#FFFFFF;
+background:#DC2D1A;
+}
+
+/********************** QLineEdit Style Sheet  *******************/ 
+QLineEdit
+{
+    border-style:none;
+    padding:3px;
+    border-radius:3px;
+    border:2px solid #DCE4EC;
+}
+
+QLineEdit:focus
+{
+    border:2px solid #34495E;
+}
+
+/********************** QSpinBox Style Sheet  *******************/ 
+QSpinBox
+{
+    border-style:none;
+    padding:0px;
+    border-radius:5px;
+    border:1px solid #000000;
+}
+QSpinBox:focus
+{
+    border:1px solid #5DACE4;
+}
+
+/********************** QDoubleSpinBox Style Sheet  *******************/ 
+QDoubleSpinBox
+{
+    border-style:none;
+    padding:0px;
+    border-radius:5px;
+    border:1px solid #000000;
+}
+QDoubleSpinBox:focus
+{
+    border:1px solid #5DACE4;
+}
