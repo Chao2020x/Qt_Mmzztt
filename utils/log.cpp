@@ -26,7 +26,9 @@ bool Log::init(const char *file_name, int close_log, int log_buf_size, int split
     if (max_queue_size >= 1)
     {
         m_is_async = true;
-        m_log_queue->clear()
+//        m_log_queue->clear();
+        std::queue<std::string> empty;
+        std::swap( *m_log_queue, empty );
         pthread_t tid;
         //flush_log_thread为回调函数,这里表示创建线程异步写日志
         pthread_create(&tid, NULL, flush_log_thread, NULL);
